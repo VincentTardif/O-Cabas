@@ -1,0 +1,82 @@
+@use "../utils/variables" as *;
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 80px 32px;
+  position: relative;
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    width: 378px;
+    align-items: flex-start;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid $black;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 278px;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 16px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    white-space: nowrap;
+    color: $black;
+    background-color: #e09c5e;
+  }
+
+  .product-name {
+    font-weight: 700;
+    color: $black;
+    font-size: 20px;
+    line-height: 26px;
+    white-space: nowrap;
+  }
+
+  .product-price {
+    font-weight: 500;
+    color: $black;
+    font-size: 20px;
+    line-height: 26px;
+    white-space: nowrap;
+  }
+
+  .description {
+    padding: 16px;
+    width: calc(100% - 32px);
+
+    .p {
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,222 @@
+[
+  {
+      "id": "1",
+      "company": "Ferme de la Saline",
+      "firstname": "Étienne",
+      "lastname": "Dupont",
+      "description": "Producteur de sel de Guérande",
+      "city": "Guérande",
+      "website_url": "www.fermedelasaline.fr",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "2",
+      "company": "Domaine du Marais",
+      "firstname": "Sophie",
+      "lastname": "Martin",
+      "description": "Producteur de vin blanc",
+      "city": "Guérande",
+      "website_url": "www.domainedumarais.com",
+      "picture": "lien_vers_photo.jpg",
+      "status": "0"
+  },
+  {
+      "id": "3",
+      "company": "La Cabane aux Huîtres",
+      "firstname": "Pierre",
+      "lastname": "Moreau",
+      "description": "Élevage et vente d'huîtres de la Baie de La Baule",
+      "city": "Batz-sur-Mer",
+      "website_url": "www.cabaneauxhuitres.fr",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "4",
+      "company": "Ferme de la Prairie",
+      "firstname": "Marie",
+      "lastname": "Lambert",
+      "description": "Producteur de légumes bio",
+      "city": "La Turballe",
+      "website_url": "www.fermedelaprairie.com",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "5",
+      "company": "Boulangerie Guérandaise",
+      "firstname": "Jean",
+      "lastname": "Laurent",
+      "description": "Boulangerie artisanale",
+      "city": "Guérande",
+      "website_url": "www.boulangerieguerandaise.fr",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "6",
+      "company": "Le Potager de Pauline",
+      "firstname": "Pauline",
+      "lastname": "Girard",
+      "description": "Maraîcher bio",
+      "city": "Piriac-sur-Mer",
+      "website_url": "www.potagerdepauline.fr",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "7",
+      "company": "La Fromagerie du Coin",
+      "firstname": "François",
+      "lastname": "Petit",
+      "description": "Fromagerie locale",
+      "city": "Herbignac",
+      "website_url": "www.fromagerieducoin.com",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "8",
+      "company": "Les Vergers de Guérande",
+      "firstname": "Sandrine",
+      "lastname": "Roux",
+      "description": "Producteur de pommes et poires",
+      "city": "La Baule",
+      "website_url": "www.vergersdeguerande.fr",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "9",
+      "company": "Moulin de la Sérénité",
+      "firstname": "Marc",
+      "lastname": "Charpentier",
+      "description": "Moulin à vent pour farine",
+      "city": "Guérande",
+      "website_url": "www.moulinserenite.fr",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "10",
+      "company": "Ferme des Mille Saveurs",
+      "firstname": "Catherine",
+      "lastname": "Lefebvre",
+      "description": "Ferme laitière",
+      "city": "Batz-sur-Mer",
+      "website_url": "www.millesaveurs.com",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "11",
+      "company": "Les Jardins du Sel",
+      "firstname": "Julien",
+      "lastname": "Marchand",
+      "description": "Producteur de légumes de saison",
+      "city": "Guérande",
+      "website_url": "www.jardinsdusel.com",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "12",
+      "company": "Poissonnerie de Guérande",
+      "firstname": "Émilie",
+      "lastname": "Guérin",
+      "description": "Poissonnerie locale",
+      "city": "Guérande",
+      "website_url": "-",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "13",
+      "company": "La Ferme du Bois Joli",
+      "firstname": "Nicolas",
+      "lastname": "Mercier",
+      "description": "Producteur de volailles fermières",
+      "city": "La Baule",
+      "website_url": "www.fermeduboisjoli.com",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "14",
+      "company": "Brasserie de Guérande",
+      "firstname": "Thomas",
+      "lastname": "Leclerc",
+      "description": "Brasserie artisanale",
+      "city": "Guérande",
+      "website_url": "www.brasseriedeguerande.com",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "15",
+      "company": "Les Délices de Marie",
+      "firstname": "Marie",
+      "lastname": "Dupuis",
+      "description": "Pâtisserie artisanale",
+      "city": "La Turballe",
+      "website_url": "www.delicesdemarie.fr",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "16",
+      "company": "Les Vergers de Piriac",
+      "firstname": "Éric",
+      "lastname": "Perrin",
+      "description": "Producteur de fruits",
+      "city": "Piriac-sur-Mer",
+      "website_url": "www.vergersdepiriac.com",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "17",
+      "company": "La Ferme des Marais",
+      "firstname": "Isabelle",
+      "lastname": "Rousseau",
+      "description": "Élevage de bovins",
+      "city": "Guérande",
+      "website_url": "www.fermedesmarais.fr",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "18",
+      "company": "Apiculteur du Marais",
+      "firstname": "Antoine",
+      "lastname": "Bernard",
+      "description": "Production de miel",
+      "city": "Saint-Molf",
+      "website_url": "-",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "19",
+      "company": "Les Gourmandises de Léa",
+      "firstname": "Léa",
+      "lastname": "Dubois",
+      "description": "Confiserie artisanale",
+      "city": "La Baule",
+      "website_url": "www.gourmandisesdelea.com",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  },
+  {
+      "id": "20",
+      "company": "Les Plaisirs de la Mer",
+      "firstname": "Mathieu",
+      "lastname": "Robert",
+      "description": "Produits de la mer frais",
+      "city": "Le Croisic",
+      "website_url": "-",
+      "picture": "lien_vers_photo.jpg",
+      "status": "1"
+  }
+]

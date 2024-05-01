@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Fruits",
+    "color": "#FFD700"
+  },
+  {
+    "id": 2,
+    "name": "Légumes",
+    "color": "#32CD32"
+  },
+  {
+    "id": 3,
+    "name": "Pains et viennoiseries",
+    "color": "#8B4513"
+  },
+  {
+    "id": 4,
+    "name": "Produits laitiers",
+    "color": "#FF69B4"
+  },
+  {
+    "id": 5,
+    "name": "Viandes et volailles",
+    "color": "#FF6347"
+  },
+  {
+    "id": 6,
+    "name": "Poissons et fruits de mer",
+    "color": "#1E90FF"
+  },
+  {
+    "id": 7,
+    "name": "Épicerie sucrée",
+    "color": "#FF4500"
+  },
+  {
+    "id": 8,
+    "name": "Épicerie salée",
+    "color": "#4682B4"
+  },
+  {
+    "id": 9,
+    "name": "Boissons",
+    "color": "#00FFFF"
+  },
+  {
+    "id": 10,
+    "name": "Snacks",
+    "color": "#FFA500"
+  }
+]

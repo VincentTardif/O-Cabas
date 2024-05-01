@@ -1,0 +1,31 @@
+{
+  "name": "o-cabas-back",
+  "version": "1.0.0",
+  "description": "Projet de OCabas",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "DEBUG=api:* nodemon start_server.js",
+    "seed": "DEBUG=api:import_data node ./data/import_data.js",
+    "reset_restore_db": "npm run drop_db && npm run create_db && npm run seed",
+    "drop_db": "bash ./scripts/4.sqitch_revert.sh",
+    "create_db": "bash ./scripts/3.sqitch_deploy.sh && bash ./scripts/5.sqitch_verify.sh "
+  },
+  "keywords": [],
+  "author": "OCabas",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.12.2",
+    "jsonwebtoken": "^9.0.2",
+    "ms": "^2.1.3",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.3"
+  }
+}

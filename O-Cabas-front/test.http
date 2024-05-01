@@ -1,0 +1,159 @@
+@endpoint = http://localhost:3000/api/
+
+
+### add user
+POST {{endpoint}}register
+Content-Type: application/json
+
+{
+  "firstname": "admin",
+  "lastname": "ocabas",
+  "email": "admin.ocabas@example.com",
+  "password": "3at^6Br>",
+  "phone_number": "06 10 23 46 27",
+  "date_of_birth": "1995-07-20",
+  "address": "24 Avenue du Soleil",
+  "zip_code": "44350",
+  "city": "Guérande",
+  "avatar": "lien_avatar_2.jpg",
+  "is_admin": true,
+  "status": true
+}
+
+
+# {       
+#         "firstname": "Sophie",
+#         "lastname": "Lefevre",
+#         "email": "sophie.lefevre@example.com",
+#         "password": "3at^6Br>",
+#         "phone_number": "06 25 10 39 56",
+#         "date_of_birth": "1983-09-30",
+#         "address": "6 Rue du Commerce",
+#         "zip_code": "44350",
+#         "city": "Guérande",
+#         "avatar": "lien_avatar_5.jpg",
+#         "is_admin": false,
+#         "status": true
+# }
+
+### login user
+POST {{endpoint}}login
+Content-Type: application/json
+
+{
+  "email": "piccolo.sayen12@example.com",
+  "password": "kH5z9.R!"
+}
+
+### récupération du compte utilisateur
+GET {{endpoint}}auth
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImZpcnN0bmFtZSI6InBpY2NvbG8iLCJsYXN0bmFtZSI6Im1yIiwiZW1haWwiOiJwaWNjb2xvLnNheWVuMTJAZXhhbXBsZS5jb20iLCJwaG9uZV9udW1iZXIiOiIrMzM2MjM3NTY3ODkiLCJkYXRlX29mX2JpcnRoIjoiMTk5NS0wNy0xOVQyMjowMDowMC4wMDBaIiwiYWRkcmVzcyI6IjI0IEF2ZW51ZSBkdSBTb2xlaWwiLCJ6aXBfY29kZSI6IjQ0MzUwIiwiY2l0eSI6InNhdGFuIGNpdHkiLCJhdmF0YXIiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOlsxMDgsMTA1LDEwMSwxMTAsOTUsOTcsMTE4LDk3LDExNiw5NywxMTQsOTUsNTAsNDYsMTA2LDExMiwxMDNdfSwiaXNfYWRtaW4iOmZhbHNlLCJzdGF0dXMiOnRydWUsImNyZWF0ZWRhdCI6IjIwMjQtMDQtMDRUMDk6MjQ6NTEuNTMyWiIsInVwZGF0ZWRhdCI6bnVsbCwiaWF0IjoxNzEyMjIyNzkyfQ.TvkA7bhYkjEMehca2w8nCyYXkhqlR4f4tGsxPxuENKc"
+
+### filter
+GET http://localhost:3000/api/users
+Content-Type: application/json
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImZpcnN0bmFtZSI6InBpY2NvbG8iLCJsYXN0bmFtZSI6Im1yIiwiZW1haWwiOiJwaWNjb2xvLnNheWVuMTJAZXhhbXBsZS5jb20iLCJwaG9uZV9udW1iZXIiOiIrMzM2MjM3NTY3ODkiLCJkYXRlX29mX2JpcnRoIjoiMTk5NS0wNy0xOVQyMjowMDowMC4wMDBaIiwiYWRkcmVzcyI6IjI0IEF2ZW51ZSBkdSBTb2xlaWwiLCJ6aXBfY29kZSI6IjQ0MzUwIiwiY2l0eSI6InNhdGFuIGNpdHkiLCJhdmF0YXIiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOlsxMDgsMTA1LDEwMSwxMTAsOTUsOTcsMTE4LDk3LDExNiw5NywxMTQsOTUsNTAsNDYsMTA2LDExMiwxMDNdfSwiaXNfYWRtaW4iOmZhbHNlLCJzdGF0dXMiOnRydWUsImNyZWF0ZWRhdCI6IjIwMjQtMDQtMDRUMDk6MjQ6NTEuNTMyWiIsInVwZGF0ZWRhdCI6bnVsbCwiaWF0IjoxNzEyMjIyNzkyfQ.TvkA7bhYkjEMehca2w8nCyYXkhqlR4f4tGsxPxuENKc"
+
+
+### orders
+GET http://localhost:3000/api/orders
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImZpcnN0bmFtZSI6InBpY2NvbG8iLCJsYXN0bmFtZSI6Im1yIiwiZW1haWwiOiJwaWNjb2xvLnNheWVuMTJAZXhhbXBsZS5jb20iLCJwaG9uZV9udW1iZXIiOiIrMzM2MjM3NTY3ODkiLCJkYXRlX29mX2JpcnRoIjoiMTk5NS0wNy0xOVQyMjowMDowMC4wMDBaIiwiYWRkcmVzcyI6IjI0IEF2ZW51ZSBkdSBTb2xlaWwiLCJ6aXBfY29kZSI6IjQ0MzUwIiwiY2l0eSI6InNhdGFuIGNpdHkiLCJhdmF0YXIiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOlsxMDgsMTA1LDEwMSwxMTAsOTUsOTcsMTE4LDk3LDExNiw5NywxMTQsOTUsNTAsNDYsMTA2LDExMiwxMDNdfSwiaXNfYWRtaW4iOmZhbHNlLCJzdGF0dXMiOnRydWUsImNyZWF0ZWRhdCI6IjIwMjQtMDQtMDRUMDk6MjQ6NTEuNTMyWiIsInVwZGF0ZWRhdCI6bnVsbCwiaWF0IjoxNzEyMjIyNzkyfQ.TvkA7bhYkjEMehca2w8nCyYXkhqlR4f4tGsxPxuENKc"
+
+
+
+### modify user
+PATCH {{endpoint}}user/1
+Content-Type: application/json
+Authorization: Bearer Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o
+        
+            {
+                "is_admin": true,
+                "status": false
+            }        
+
+### delete user
+DELETE {{endpoint}}user/35
+
+### Récupérer les utilisateurs
+GET {{endpoint}}users
+Authorization: Bearer Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o
+
+### Récupérer les catégories
+GET {{endpoint}}category
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o
+
+### récupérer la liste des produits
+GET {{endpoint}}products
+
+
+### récupérer un produit
+GET {{endpoint}}product/56
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o
+
+
+### récupérer la liste des producteurs
+GET {{endpoint}}producers
+
+### users
+GET {{endpoint}}users
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o
+
+### category
+GET {{endpoint}}categories
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o
+
+### ordered_products
+GET {{endpoint}}ordered_products
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o
+
+### orders
+GET {{endpoint}}orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o
+
+### add produit
+POST {{endpoint}}product
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o
+Content-Type: application/json
+
+        {   
+          "producers_id": 1,
+          "categories_id" : 2,
+          "name":"produit_test",
+          "description": "description_test",
+          "unit_type": "Pièce",
+          "price": 2,
+          "quantity": 1,
+          "picture":"http",
+          "status": true,
+          "createdat":"",
+          "updatedat":""
+        }
+
+### activer/désactiver produit
+PATCH {{endpoint}}product/56
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o
+Content-Type: application/json
+
+        {    
+            "status": false
+        }
+
+### send message
+POST {{endpoint}}contact
+Content-Type: application/json
+
+        {   
+          "firstname": "vincent",
+          "lastname" : "tardif",
+          "email": "vincent@tardif.fr",
+          "message": "message test"
+        }
+
+
+### order_completed
+PATCH {{endpoint}}order_completed/58
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o
+
+### order_completed
+PATCH {{endpoint}}order_pending/60
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.YWRtaW4ub2NhYmFzQGV4YW1wbGUuY29t.XdcEwOkvVoR1EVWAkz4_eXZeCcGd184EEVwENj--N8o

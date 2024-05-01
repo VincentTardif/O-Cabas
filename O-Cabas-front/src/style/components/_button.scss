@@ -1,0 +1,42 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins";
+
+/*
+<button class="button" aria-label="Ouvrir le panier">
+  <div class="button-content">
+    <div class="button-text">Panier</div>
+    <ShoppingCart class="button-icon"/>
+  </div>
+</button>
+*/
+
+.button {
+  padding: 9px 16px;
+  position: relative;
+  overflow: hidden;
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.button-text {
+  color: $black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+}
+

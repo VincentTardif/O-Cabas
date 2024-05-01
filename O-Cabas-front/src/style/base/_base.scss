@@ -1,0 +1,70 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* -- Styles généraux --  */
+* {
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: $white;
+  color: $black;
+}
+
+main {
+  background-color: #efefef; 
+  min-height: 100vh;
+  width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 56px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+}
+
+@include mixins.tablet {
+  main {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+@include mixins.phone {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}

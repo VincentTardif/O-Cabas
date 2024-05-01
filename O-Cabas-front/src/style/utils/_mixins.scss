@@ -1,0 +1,18 @@
+@mixin tablet {
+  @media screen and (max-width: 1279px) {
+    //  On peut ajouter des règles qui sont globales
+    //  par exemple nos tailles de police
+
+    // J'ajoute `@content` pour indiquer que mes règles
+    // utilisées avec la mixin vinedront se superposer ici
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: 767px) {
+    // Cette règle s'applique lorsque la largeur de l'écran est 
+    // inférieure ou égale à la valeur spécifiée.
+    @content;
+  }
+}

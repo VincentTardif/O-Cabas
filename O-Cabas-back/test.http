@@ -1,0 +1,256 @@
+@endpoint = http://localhost:{{$dotenv PORT}}/
+
+### voir les producteurs ou les produits
+GET {{endpoint}}api/producers
+
+### contact
+post {{endpoint}}api/contact
+Content-Type: application/json
+
+{
+            "firstname": "piccolo",
+            "lastname": "mr",
+            "email": "piccolo.sayen12@example.com",
+            "message": "test 3 de piccolo!"
+}
+
+
+### register user
+POST {{endpoint}}api/register
+Content-Type: application/json
+    
+   
+        #    {
+        #     "firstname": "piccolo",
+        #     "lastname": "mr",
+        #     "email": "piccolo.sayen12@example.com",
+        #     "password": "kH5z9.R!",
+        #     "phone_number": "+33623756789",
+        #     "date_of_birth": "1995-07-20",
+        #     "address": "24 Avenue du Soleil",
+        #     "zip_code": "44350",
+        #     "city": "satan city",
+        #     "avatar": "lien_avatar_2.jpg",
+        #     "is_admin": false,
+        #     "status": true
+        #    }
+    
+     
+
+
+        # {    
+        #     "firstname": "naruto",
+        #     "lastname": "uzumaki",
+        #     "email": "naruto.uzumaki@example.com",
+        #     "password": "2aF^9Gm>",
+        #     "phone_number": "+33623756789",
+        #     "date_of_birth": "1995-07-20",
+        #     "address": "24 Avenue du Soleil",
+        #     "zip_code": "44350",
+        #     "city": "satan city",
+        #     "avatar": "lien_avatar_2.jpg",
+        #     "is_admin": false,
+        #     "status": true
+        # }
+
+        {    
+            "firstname": "admin",
+            "lastname": "ocabas",
+            "email": "admin.ocabas@example.com",
+            "password": "3at^6Br>",
+            "phone_number": "+33623756789",
+            "date_of_birth": "1995-07-20",
+            "address": "24 Avenue du Soleil",
+            "zip_code": "44350",
+            "city": "satan city",
+            "avatar": "lien_avatar_2.jpg",
+            "is_admin": true,
+            "status": true
+        }
+
+
+### login user    
+post {{endpoint}}api/login  
+Content-Type: application/json
+
+        {
+            "email": "piccolo.sayen12@example.com",
+            "password": "kH5z9.R!"
+        } 
+        
+        # {
+        #     "email": "detuqixajo@mailinator.com",
+        #     "password": "Pa$$w0rd!"
+        # }
+
+        # {
+        #     "email": "naruto.uzumaki@example.com",
+        #     "password": "2aF^9Gm>"
+        # }
+
+
+        # {   
+        #     "email": "admin.ocabas@example.com",
+        #     "password": "3at^6Br>"
+        # }
+
+#--------------------------------------------------------------#
+#--------------------------admin-------------------------------#
+#--------------------------------------------------------------#
+                            
+### get all users
+GET {{endpoint}}api/users
+Authorization: Bearer 
+
+### get one user
+GET {{endpoint}}api/user/5
+Authorization: Bearer 
+
+
+### modify user
+patch {{endpoint}}api/users/:id
+Authorization: Bearer 
+Content-Type: application/json
+        
+    # {
+    #     "is_admin": "false",
+    #     "status": true
+    # }
+
+    #     {
+    #     "firstname": "Satan",
+    #     "lastname": "Petit coeur",
+    #     "email": "piccolo.sayen12@example.com",
+    #     "phone_number": "+33623756789",
+    #     "date_of_birth": "1995-07-20",
+    #     "address": "24 Avenue du Soleil",
+    #     "zip_code": "44350",
+    #     "city": "metroppolis"
+    #    }
+        
+        
+    #     {
+           
+    #         "firstname": "krilin",
+    #         "lastname": "tortue",
+    #         "email": "krilin.tortue@example.com",
+    #         "password": "1234",
+    #         "phone_number": "+33623756789",
+    #         "date_of_birth": "1995-07-20",
+    #         "address": "24 Avenue du Soleil",
+    #         "zip_code": "44350",
+    #         "city": "satan city",
+    #         "avatar": "lien_avatar_2.jpg",
+    #         "is_admin": false,
+    #         "status": true
+    
+    # }
+           
+### Suppression du compte par l'admin
+delete {{endpoint}}api/user/:id
+Authorization: Bearer 
+
+### ajouter un producteur
+post  {{endpoint}}api/producer
+Authorization: Bearer 
+Content-Type: application/json
+
+        { 
+            "company": "Le fermier", 
+            "firstname": "Paul",
+            "lastname": "Le Fermier",
+            "description": "La ferme depuis 10 génrations.",
+            "city": "Guérande",
+            "website_url": "www.lefermier.fr",
+            "picture": "baguette.webp",
+            "status": true
+        }
+
+
+### modifier un produit 
+patch  {{endpoint}}api/product/1
+Authorization: Bearer 
+Content-Type: application/json
+
+# {
+#     "producers_id": 5,
+#     "categories_id": 3,
+#     "name": "Pain aux chocolat",
+#     "description": "Pain aux chocolat du mont d'or.",
+#     "unit_type": "Unité",
+#     "price": "1.50",
+#     "status": true
+# }
+
+### ajouter un produit
+post  {{endpoint}}api/product
+Authorization: Bearer 
+Content-Type: application/json
+
+        { 
+            "price": 3.5, 
+            "producers_id": 5,
+            "categories_id": 3,
+            "name": "La paillasse",
+            "description": "Le pain des familles nombreuses ou des gros mangeurs",
+            "unit_type": "Unité",
+            "picture": "baguette.webp",
+            "status": true
+        }
+
+### supprimer un produit
+delete  {{endpoint}}api/product/:id
+Authorization: Bearer 
+
+
+#--------------------------------------------------------------#
+#--------------------------adhérent----------------------------#
+#--------------------------------------------------------------#
+
+
+### voir les infos de son compte
+get {{endpoint}}api/account
+Authorization: Bearer 
+
+### modifier son compte
+patch {{endpoint}}api/account
+Authorization: Bearer 
+
+### Suppression du compte
+delete {{endpoint}}api/account
+Authorization: Bearer 
+
+
+### effectuer une commande
+post {{endpoint}}api/order
+Authorization: Bearer 
+Content-Type: application/json
+
+# {
+#     order:{
+#       "userId": 1,
+#       "status": 2,
+#       "orderTotalPrice": 2
+#     },
+#     products: [{ 
+#         "id": 1,
+#         "price": 2, 
+#         "quantity": 2, 
+#         "producers_id": 2,
+#         "categories_id": 2,
+#         "name": ropeove,
+#         "description": trre,
+#         "unit_type": fr,
+#         "picture": frtfhr,
+#         "status": true
+#     }
+#     ]
+# }
+
+### voir ses commandes
+get {{endpoint}}api/my_orders
+Authorization: Bearer 
+
+### voir une commande 
+get {{endpoint}}api/my_order_detail/:id
+Authorization: Bearer 
