@@ -214,17 +214,17 @@ async function delete_products() {
 const data_users = [
     {
         
-        "firstname": "Jean",
-        "lastname": "Dupont",
-        "email": "jean.dupont@example.com",
-        "password": "1234",
+        "firstname": "admin",
+        "lastname": "admin",
+        "email": "admin.ocabas@example.com",
+        "password": "3at^6Br>",
         "phone_number": "+33612345678",
         "date_of_birth": "1990-03-15",
         "address": "10 Rue des Lilas",
         "zip_code": "44350",
         "city": "Guérande",
         "avatar": "lien_avatar_1.jpg",
-        "is_admin": false,
+        "is_admin": true,
         "status": true
      },
     {
@@ -920,10 +920,10 @@ const data_products = [
   ]
 
 
-// insert_users(data_users);
+ insert_users(data_users);
 // insert_producers(data_producers);
 // insert_categories(data_categories);
-insert_products(data_products);
+// insert_products(data_products);
 
 
 // delete_users();

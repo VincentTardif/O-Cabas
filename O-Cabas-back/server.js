@@ -7,7 +7,7 @@ import cors from 'cors';
 const logger = debug('api:initialization');
 
 const app = express();
-const PORT = process.env.PORT ?? 3000;
+const PORT = process.env.PORT ?? 3333;
 
 // Enable JSON format
 app.use(express.json());
